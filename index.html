@@ -5,18 +5,100 @@
 		<link rel = "stylesheet" href = "style.css">
 	</head>
 
-	<body style="background-image: url(cookiebg.png);">
-		<!-- <div id = "space"></div>
-		<img src="cookie.png" id="cookie-clicker" onClick="CookieClick()" width="400px" alt="cookie">
-
-		<div id = "numbers"></div> -->
-		<div align="center">
-			<img src="cookie.png" id="cookie-clicker" onclick="clickUp()" width="25%" alt="cookie">
-		</div>
+	<body style="background-image: url(cookiebg.png); overflow: hidden">
+		<!-- Cookie Count -->
 		<div id="numbers">
-			<p style="font-size:50px;" align="center">Cookies:</p>
-			<h1 id="cookie-counter">0</h1>
+			<p style="position: absolute; bottom: 60px; left: 130px">Cookies:</p>
+			<h2 style="position: absolute; top: 60px; left: 180px" id="cookie-counter"></h1>
 		</div>
+
+		<!-- Cookie Image -->
+		<div align="left">
+			<img src="cookie.png" id="cookie-clicker" class="cookieButton" style="position: absolute; top:220px" onclick="clickUp()" width="20%" alt="cookie">
+		</div>
+
+		<!-- Cookies per second -->
+		<div id="cookiesPerSecond">
+			<h1 style="position: absolute; left: 20px">Cookies Per Second:</h1>
+			<h1 style="position: absolute; top: 70px; left: 20px"><span id="cookies-per-second"></span></h2>
+		</div>
+
+		<!-- Vertical Bars -->
+		<div>
+			<hr width="20" class="verticalBar1">
+			<hr width="20" class="verticalBar2">
+		</div>
+
+		<!-- Shop -->
+			<!-- AutoClicker -->
+		<div id="upgrade" class="upgradeButton" style="position: absolute; top: 40px; right: 20px;" onclick="autoClickerUpgrade()">
+			<h1 class="upgradeNameText">Auto Clicker</p>
+			<h2 class="upgradesOwned">Owned: <span id="autoClickers-owned"></span></h1>
+			<h2 class="upgradePriceText">Cost: <span id="autoClicker-price-display"></span></h1>
+			<img src="autoClicker.png" alt="autoClicker" class="upgradeImage">
+		</div>
+			<!-- Grandmas -->
+		<div id="upgrade2" class="upgradeButton" style="visibility: hidden; position: absolute; top: 300px; right: 20px;" onclick="grandmaUpgrade()">
+			<h1 class="upgradeNameText">Grandmas</p>
+			<h2 class="upgradesOwned">Owned: <span id="grandmas-owned"></span></h1>
+			<h2 class="upgradePriceText">Cost: <span id="grandma-price-display"></span></h1>
+			<img src="grandma.png" alt="grandma" class="upgradeImage">
+		</div>
+		<div id="upgrade3" class="upgradeButton" style="visibility: hidden; position: absolute; top: 560px; right: 20px;" onclick="factoryUpgrade()">
+			<h1 class="upgradeNameText">Factory</p>
+			<h2 class="upgradesOwned">Owned: <span id="factories-owned"></span></h1>
+			<h2 class="upgradePriceText">Cost: <span id="factory-price-display"></span></h1>
+			<img src="factory.png" alt="factory" class="upgradeImage">
+		</div>
+
+		<!-- ACHIEVEMENTS -->
+		<div align="left">
+			<!-- Bake 100 cookies Achievement -->
+		<div class="achievement">
+			<img src="cookie.png" id="oneHundredCookies" class="cookieSkinButton" onclick="changeSkinToCookie()" style="visibility: hidden; position: absolute; right: 0px" alt="cookieAchievement" width="100%" title="Bake 100 cookies!">
+		</div>
+
+			<!-- Bake 10,000 cookies Achievement -->
+		<div class="achievement2">
+			<img src="sugarCookie.png" id="tenThousandCookies" class="sugarCookieSkinButton" onclick="changeSkinToSugarCookie()" style="visibility: hidden; position: absolute; right: 5px" alt="sugarCookieAchievement" width="95%" title="Bake 10,000 cookies!">
+		</div>
+
+			<!-- Bake 1 million cookies achievement -->
+		<div class="achievement3">
+			<img src="oreoCookie.png" id="oneMillionCookies" class="oreoCookieSkinButton" onclick="changeSkinToOreoCookie()" style="visibility: hidden; position: absolute; right: 10px" alt="oreoCookieAchievement" width="85%" title="Bake 1,000,000 cookies!">
+		</div>
+
+			<!-- Own 10 autoclickers -->
+		<div class="achievement4">
+			<img src="tenClickers.png" id="tenAutoClickers" style="visibility: hidden" alt="tenClickerAchievement" width="100%" title="Own 10 Auto-Clickers!">
+		</div>
+
+			<!-- Own 100 autoclickers -->
+		<div class="achievement5">
+			<img src="oneHundredClickers.png" id="oneHundredAutoClickers" style="visibility: hidden" alt="tenClickerAchievement" width="100%" title="Own 10 Auto-Clickers!">
+		</div>
+
+			<!-- Own 10 Grandmas -->
+		<div class="achievement6">
+			<img src="tenGrandmas.png" id="tenGrandmas" style="visibility: hidden" alt="tenGrandmasAchievement" width="95%" title="Own 10 Grandmas!">
+		</div>
+
+			<!-- Own 100 Grandmas -->
+		<div class="achievement7">
+			<img src="oneHundredGrandmas.png" id="oneHundredGrandmas" style="visibility: hidden" alt="oneHundredGrandmasAchievement" width="90%" title="Own 100 Grandmas!">
+		</div>
+
+			<!-- Own 10 Factories -->
+		<div class="achievement8">
+			<img src="tenFactories.png" id="tenFactories" style="visibility: hidden" alt="tenFactoriesAchievement" width="90%" title="Own 10 Factories!">
+		</div>
+
+			<!-- Own 100 Factories -->
+		<div class="achievement9">
+			<img src="oneHundredFactories.png" id="oneHundredFactories" style="visibility: hidden" alt="oneHundredFactoriesAchievement" width="90%" title="Own 100 Factories!">
+		</div>
+		</div>
+
 		<script type="text/javascript" src="cookie.js"></script>
 	</body>
 </html>

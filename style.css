@@ -1,26 +1,308 @@
 #numbers {
-	margin: auto;
+	position: absolute;
+	left: 10px;
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	margin-bottom: 20px;
 	font-size: 30px;
-	border: 5px solid;
-	border-radius: 10px;
-	background-color: white;
-	width: 200px;
-	height: 250px;
+	background-color: rgba(191,174,119,0.9);
+	text-align: center;
+	width: 450px;
+	height: 170px;
+	border: 5px solid black;
 }
 
-#space {
-    margin: auto;
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: 5px;
-    font-size: 30px;
-    border: 5px solid;
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
-    width: 389px;
-    height: 60px;
+#cookiesPerSecond {
+	position: absolute;
+	left: 10px;
+	top: 700px;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	background-color: rgba(191,174,119,0.9);
+	text-align: center;
+	width: 450px;
+	height: 170px;
+	border: 5px solid black;
+}
+
+#cookie-clicker {
+	cursor: pointer;
+}
+.cookieButton {
+	padding-left: 70px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.0001s all;
+}
+
+.cookieButton:active {
+    transform: scale(0.98) rotate(2deg);
+    /* Scaling button to 0.98 to its original size */
+    /* and rotating it by 2 degrees to give off fake movement */
+}
+
+#upgrade {
+	text-align: right;
+	padding-bottom: 90px;
+	margin-bottom: 100px;
+	font-size: 20px;
+	background-color: rgba(191,174,119,0.95);
+	border: 10px solid black;
+	width: 23%;
+	height: 10%;
+}
+
+#upgrade2 {
+	text-align: right;
+	padding-bottom: 90px;
+	margin-bottom: 100px;
+	font-size: 20px;
+	background-color: rgba(191,174,119,0.95);
+	border: 10px solid black;
+	width: 23%;
+	height: 10%;
+}
+
+#upgrade3 {
+	text-align: right;
+	padding-bottom: 90px;
+	margin-bottom: 100px;
+	font-size: 20px;
+	background-color: rgba(191,174,119,0.95);
+	border: 10px solid black;
+	width: 23%;
+	height: 10%;
+}
+
+p {
+	font-size:50px;
+}
+
+.upgradeButton {
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.0001s all;
+}
+
+.upgradeButton:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    /* and rotating it by 2 degrees to give off fake movement */
+}
+
+.upgradeNameText {
+	position: relative;
+	bottom: 20px;
+	padding-right: 30px;
+	color: rgb(74,67,0);
+}
+
+.upgradesOwned {
+	position: relative;
+	bottom: 58px;
+	padding-right: 30px;
+	color: rgb(74,67,0);
+}
+
+.upgradePriceText {
+	position: relative;
+	bottom: 70px;
+	padding-right: 30px;
+	color: rgb(74,67,0);
+}
+
+.upgradeImage {
+	width: 35%;
+	position: relative;
+	bottom: 220px;
+	right: 260px;
+}
+
+.verticalBar1 {
+	position: absolute;
+	height: 2000px;
+	left: 490px;
+	bottom: 0px;
+	background-color: black;
+	border: 2px solid black;
+}
+
+.verticalBar2 {
+	position: absolute;
+	height: 1000px;
+	left: 1310px;
+	bottom: 0px;
+	background-color: black;
+	border: 2px solid black;
+}
+
+.achievement {
+	position: absolute;
+	left: 625px;
+	bottom: 775px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.achievement2 {
+	position: absolute;
+	left: 850px;
+	bottom: 775px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.achievement3 {
+	position: absolute;
+	left: 1075px;
+	bottom: 775px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.achievement4 {
+	position: absolute;
+	left: 730px;
+	bottom: 575px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.achievement5 {
+	position: absolute;
+	left: 970px;
+	bottom: 575px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.achievement6 {
+	position: absolute;
+	left: 730px;
+	bottom: 375px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.achievement7 {
+	position: absolute;
+	left: 970px;
+	bottom: 375px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.achievement8 {
+	position: absolute;
+	left: 730px;
+	bottom: 175px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.achievement9 {
+	position: absolute;
+	left: 970px;
+	bottom: 175px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(200,200,200,0.9);
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+}
+
+.cookieSkinButton {
+	padding-left: 70px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.0001s all;
+}
+
+.cookieSkinButton:active {
+    transform: scale(0.98) rotate(2deg);
+    /* Scaling button to 0.98 to its original size */
+    /* and rotating it by 2 degrees to give off fake movement */
+}
+
+.sugarCookieSkinButton {
+	padding-left: 70px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.0001s all;
+}
+
+.sugarCookieSkinButton:active {
+    transform: scale(0.98) rotate(2deg);
+    /* Scaling button to 0.98 to its original size */
+    /* and rotating it by 2 degrees to give off fake movement */
+}
+
+.oreoCookieSkinButton {
+	padding-left: 70px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.0001s all;
+}
+
+.oreoCookieSkinButton:active {
+    transform: scale(0.98) rotate(2deg);
+    /* Scaling button to 0.98 to its original size */
+    /* and rotating it by 2 degrees to give off fake movement */
 }
